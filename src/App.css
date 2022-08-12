@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+body {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: aliceblue;
+  font-family: "Cinzel", serif;
+}
+.quote-container {
+  text-align: center;
+  width: 800px;
+  min-height: 200px;
+  padding: 5px;
+}
+.quote-content {
+  height: 75px;
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px lightgray;
+}
+
+.quote-author {
+  margin-top: 50px;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+}
+.new-quote-btn {
+  margin-top: 20px;
+  background-color: black;
   color: white;
+  width: 125px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px gray;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.new-quote-btn:hover {
+  background-color: aliceblue;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.new-quote-btn:active {
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 600px) {
+  .quote-container {
+    width: 100%;
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .quote-content {
+    min-height: 200px;
+    text-align: center;
   }
 }
