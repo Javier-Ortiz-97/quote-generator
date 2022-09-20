@@ -37,13 +37,12 @@ body {
   box-shadow: 0 0 10px gray;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.new-quote-btn:hover {
-  background-color: aliceblue;
-  color: black;
-}
 
 .new-quote-btn:active {
   transform: translateY(-2px);
+  background-color: aliceblue;
+  color: black;
+
 }
 
 @media (max-width: 600px) {
